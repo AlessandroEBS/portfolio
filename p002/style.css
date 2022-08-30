@@ -6,4 +6,17 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --red: #d63a25;
+    --white: #fff;
+    --dark: #000;
+}
+
+body {
+    color: var(--dark);
 }

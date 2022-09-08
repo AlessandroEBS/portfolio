@@ -19,4 +19,49 @@
 
 body {
     color: var(--dark);
+    background-color: var(--white);
 }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    box-shadow: 5px 3px 6px #ccc;
+    width: 100%;
+    background-color: var(--white);
+    transition: all 0.5s;
+}
+
+.navigation .logo {
+    color: var(--red);
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+.navigation .logo > span {
+    color: var(--dark);
+}
+
+.navigation .nav-menu {
+    color: var(--dark);
+    display: flex;
+    gap: 60px;
+}
+
+.navigation ul li a {
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.navigation ul li:hover {
+    transform: translateY(-6px);
+    transition-duration: 0.5s;
+}
+
+.navigation ul li a:hover {
+    color: var(--red);
+}
+

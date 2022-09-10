@@ -15,6 +15,7 @@
     --red: #d63a25;
     --white: #fff;
     --dark: #000;
+    --font1: 'Poppins';
 }
 
 body {
@@ -72,6 +73,7 @@ body {
 .menu.ativo .bar:nth-child(2) {
     opacity: 0;
 }
+
 .menu.ativo .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
@@ -103,7 +105,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 0px 5%;
+    padding: 2% 5%;
 }
 
 .home-txt {
@@ -144,6 +146,17 @@ body {
     background-color: #ee1c00;
 }
 
+.rodape {
+    background-color: var(--red);
+    width: 100%;
+    margin-top: 3rem;
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
+    padding-top: 3px;
+    font-family: var(--font1), sans-serif;
+}
+
 @media (max-width:785px) {
     .navigation {
         padding: 18px 20px;
@@ -154,4 +167,20 @@ body {
     .nav-item {
         display: none;
 }
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .home-txt .text-h4 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .home-txt .text-h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    .home-img {
+        margin-top: 3rem;
+    }
 }
